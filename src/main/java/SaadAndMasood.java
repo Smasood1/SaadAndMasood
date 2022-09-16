@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class SaadAndMasood {
     public static String personCheck(String name){
-        if(name.equalsIgnoreCase("Saad")){
+        if(name.equalsIgnoreCase("Alice")){
             return ("Hello, " + name);
         }
-        if(name.equalsIgnoreCase("Masood")){
+        if(name.equalsIgnoreCase("Bob")){
             return ("Hello, " + name);
         } else{
             return ("Who tf are you ");
@@ -21,8 +21,13 @@ public class SaadAndMasood {
         System.out.println("Insert Name Below: ");
 
         name = in.next();
+        while(!(name.equalsIgnoreCase("Alice")) && !(name.equalsIgnoreCase("bob"))){
+            System.out.println("What is your name?");
+            name = in.next();
 
-        System.out.println(personCheck(name));
+        }
+
+        System.out.println("Hello, "+ name);
     }
 
 
