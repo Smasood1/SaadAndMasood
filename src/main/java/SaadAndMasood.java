@@ -1,39 +1,35 @@
 import java.util.Scanner;
 
 public class SaadAndMasood {
-    public static String personCheck(String name){
-        if(name.equalsIgnoreCase("Alice")){
-            return ("Hello, " + name);
-        }
-        if(name.equalsIgnoreCase("Bob")){
-            return ("Hello, " + name);
-        } else{
-            return ("Who tf are you ");
-        }
-    }
 
     public static void main(String[] args) {
 
-        Scanner in = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         String name;
 
-        System.out.println("Insert Name Below: ");
+        System.out.println("What is your Name? ");
 
-        name = in.next();
-        while(!(name.equalsIgnoreCase("Alice")) && !(name.equalsIgnoreCase("bob"))){
-            System.out.println("What is your name?");
-            name = in.next();
+        name = input.next();
 
+
+        if(name.equalsIgnoreCase("Alice")){
+            System.out.println("Hello, " + name);
         }
-
-        System.out.println("Hello, "+ name);
+        else if(name.equalsIgnoreCase("Bob")){
+            System.out.println("Hello, " + name);
+        } else{
+            System.out.println("who tf are you");
+        }
     }
 
 
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
